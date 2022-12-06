@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once 'layout/head.php';
+include_once 'view/modal.php';
 ?>
 
 <body>
@@ -28,7 +29,7 @@ include_once 'layout/head.php';
                                         </div>
                                     </div>
                                     <div class="mb-3 px-md-5 text-end">
-                                        <a href="forgot_password.php" class="text-decoration-none">ลืมรหัสผ่าน ?</a>
+                                        <a role='button' class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#changePassword">ลืมรหัสผ่าน ?</a>
                                     </div>
                                     <div class="d-grid gap-2 px-md-5">
                                         <button type="submit" class="btn btn-lg text-light" style="background-color: #42BDED;">เข้าสู่ระบบ</button>
